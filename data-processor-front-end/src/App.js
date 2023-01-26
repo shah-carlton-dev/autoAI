@@ -1,13 +1,15 @@
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import FileUploadForm from './components/FileUploadForm';
-import FileList from './components/FileList';
+import CoolList from './components/CoolList';
+// import FileList from './components/FileList';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <FileUploadForm/>
-        <FileList/>
+        {/* <FileList/> */}
+        <CoolList/>
       </header>
     </div>
   );
