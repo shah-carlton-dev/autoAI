@@ -19,4 +19,4 @@ class Bills:
 
 # function will be called at the completion of each model configuration
 def bill_dispatcher(bill_info: Bills):
-    
+    logging.log()

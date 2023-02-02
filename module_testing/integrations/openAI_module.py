@@ -3,7 +3,12 @@ import pandas as pd
 import csv
 from typing import List
 from datetime import datetime
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
+
+openai_key = os.getenv('OPENAI_KEY')
 from tenacity import (
     retry,
     stop_after_attempt,
@@ -60,7 +65,7 @@ def openAI_function(key, FILEPATH, models: List[Models], promptColumn):
 
     # assign openai.api_key to key input; hardcoding this with Mac's key for now
     # openai.api_key = key
-    openai.api_key = "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"
+    openai.api_key = openai_key
 
     # Check if file is compatible; if compatible, store prompts as dataframe
     with open(FILEPATH, 'r') as file:
