@@ -1,5 +1,15 @@
-prompt
-"“We need to create a much more flexible, hybrid work environment that has a lot more empathy, caring for people."
+prompt,davinci custom config 1,davinci custom config 2
+"“We need to create a much more flexible, hybrid work environment that has a lot more empathy, caring for people."," I believe this is the future of work,” says Butchko.
+
+The future of work will be about finding the right balance between remote and in-person work, accommodating different lifestyles, and continuing to focus on building an inclusive workforce. Companies will need to find the right ways to effectively support and manage employees, whether they’re in and out of the office.
+
+Additionally, companies will need to invest in employee education and training to ensure they have the skills they need to be successful in the new hybrid work environment.
+
+“We need to invest in employee training and education to understand the new capabilities, technology, and tools required to make the hybrid work environment successful,” says Butchko. “We need to focus on developing leaders who can foster a closer relationship with each individual and be more agile when it comes to decision-making.”
+
+The pandemic has accelerated the need for companies to embrace the future of work and adapt to the changing landscape. With the right mindset, technology, and support, companies can successfully create an inclusive, agile work environment that is focused on the future.","”
+
+This is an important goal for any organization. Creating a flexible, hybrid work environment that is empathetic and caring for employees can help to create a more productive and positive work environment. It can also help to reduce stress and burnout, as well as improve morale and engagement. To achieve this goal, organizations should focus on creating policies and procedures that support flexible work arrangements, such as allowing employees to work remotely or on flexible schedules. They should also provide resources and support to help employees manage their work-life balance, such as access to mental health services, childcare, and other resources. Additionally, organizations should strive to create a culture of respect and appreciation for employees, and ensure that their voices are heard and their contributions are valued."
 "Chat messages:
 - I want to go to the beach and eat ice cream
 Activities: Beach, Ice cream
@@ -14,7 +24,7 @@ Activities: Restaurant, Drinks, Karayoke
 -----
 Chat messages:
 I like dogs
-Activities:"
+Activities:"," Dog walking, Dog watching"," Dog walking, Dog park"
 "!....THE OWNERS REALLY REALLY need to quit being soooooo cheap let them wrap my freaking sandwich in two papers not one!
 extract the food from the post:sandwich
 ---
@@ -34,7 +44,7 @@ Also there are combos like a burger, fries, and beer for 23 which is a decent de
 extract the food from the post:burger, fries, beer
 ---
 I kept looking at the time and it had soon become 35 minutes, yet still no food.
-extract the food from the post:"
+extract the food from the post:",none,none
 """As a male who has always grown up surrounded by books, I've always found it astonishing that most members of my male cohort have a natural distaste for reading. I know countless individuals that have no desire to pick up a book.... but WHY?
 
 
@@ -42,7 +52,11 @@ If you look at the statistics, close to 80% of all books purchased are by women.
 
 
 ...""
-  In summary:"""
+  In summary:""","
+
+There is a noticeable disparity between women and men when it comes to reading, with women making up the overwhelming majority of purchased books, book club enrollments, and avid readers. This has led to the question of why men don't read - is it because they don't know what to read, don't have the time, or lack the interest? There is no easy answer, but it is clear that some efforts must be taken to engage men in reading and potentially close the gender gap.","
+
+There is a large disparity between men and women when it comes to reading, with women being the majority of avid readers. This begs the question of why men don't read. Is it because they don't know what to read, don't have the time, or don't have the interest? It is unclear why this disparity exists, but it is an important question to consider in order to understand how to encourage more men to read."
 """At the park, there was a murderer at night and I almost was not able to escape with my life and as a result, I am traumatised""
 In summary: ""The park is dangerous at night""
 
@@ -52,7 +66,7 @@ In summary:""Lot's of food makes me happy""
 
 
 ""Powershell gave my computer a virus and now I have lost all functionality with it""
-In summary:"""
+In summary:""","Powershell caused computer problems""","Powershell caused computer damage"""
 """Hiding"" means keeping out of sight.
 ""Screaming"" means giving a long, loud cry.
 ""Jogging"" means running at a steady, gentle pace.
@@ -60,14 +74,14 @@ In summary:"""
 ""Crying"" means shedding tears, as an expression of distress, pain, or sorrow.
 ""Shrinking"" means becoming smaller in size or amount.
 ""Worrying"" means dwelling on difficulties or troubles.
-""Whispering"" means"
+""Whispering"" means", speaking quietly so that only those nearby can hear.," speaking in a low, quiet voice."
 """The killer whale or orca (Orcinus orca) is a toothed whale belonging to the oceanic dolphin family, of which it is the largest member"". In summary: ""The killer whale or orca is the largest type of dolphin""
 
 
 ""It is recognizable by its black-and-white patterned body"". In summary:""Its body has a black and white pattern.""
 
 
-""Killer whales have a diverse diet, although individual populations often specialize in particular types of prey"". In summary:"""
+""Killer whales have a diverse diet, although individual populations often specialize in particular types of prey"". In summary:""","Killer whales specialize in different kinds of prey.""","Killer whales have a varied diet, but some populations focus on specific prey."""
 """To hide"" means ""to put or keep out of sight""
 ""To scream"" means ""to give a long, loud, piercing cry""
 ""To jog"" means ""to run at a steady gentle pace""
@@ -75,7 +89,9 @@ In summary:"""
 ""To cry"" means ""to shed tears, typically as an expression of distress, pain, or sorrow""
 ""To shrink"" means ""to become or make smaller in size or amount""
 ""To worry"" means ""to dwell on difficulty or troubles""
-""To sing"" means"
+""To sing"" means"," ""to make musical sounds with the voice, and typically to give expression to words in a poetic composition"""," ""to produce musical sounds with the voice, especially words with a set tune""
+""To laugh"" means ""to show amusement or joy by smiling and making a sound with one's voice""
+""To jump"" means ""to spring into the air by using the muscles in one's legs and feet"""
 """a clumsily manufactured exploitation flick, 
 Question: Is this sentence positive or negative?""
 Answer: ""negative""
@@ -86,7 +102,7 @@ Answer: ""positive""
 ---
 ""the director knows how to apply textural gloss, but his portrait of sex-as-war is strictly sitcom. 
 Question: Is this sentence positive or negative?""
-Answer:"""
+Answer:""","negative""","negative"""
 """as delicately calibrated in tone 
 Question: Is this sentence positive or negative?""
 Answer: ""positive""
@@ -97,7 +113,7 @@ Answer: ""negative""
 ---
 ""the movie, directed by mick jackson, leaves no cliche unturned, from the predictable plot to the characters straight out of central casting. 
 Question: Is this sentence positive or negative?""
-Answer:"""
+Answer:""","negative""","negative"""
 """be most in the mind of the killer 
 Question: Is this sentence positive or negative?""
 Answer: ""positive""
@@ -108,7 +124,7 @@ Answer: ""positive""
 ---
 ""there ought to be a directing license, so that ed burns can have his revoked. 
 Question: Is this sentence positive or negative?""
-Answer:"""
+Answer:""","negative""","negative"""
 """love me"" I mumbled as my mind went numb with pleasure he rammed his dick in me faster and faster I could feel it getting deeper and deeper until he exploded in me and my mouth came back down on his sweaty body and licked him all over as I drank in his essence.
 ""love me"" I mumbled as my mind went numb with pleasure he rammed his dick in me faster and faster I could feel it getting deeper and deeper until he exploded in me and my mouth came back down on his sweaty body and licked him all over as I drank in his essence.
 
@@ -253,7 +269,7 @@ He stopped and started again a grin forming on his face he was enjoying it. . . 
 ""I love you"" I said again this time louder. I was almost there he muttered under his breath ""shut the hell up and take it bitch."" I couldn't believe it ""No!"" I moaned ""you're killing me I want to come."" He gave in and let me come.
 
 
-When I came it was as if all of my emotions were laid out for everyone to see it felt wonderful I wanted more but that would be greedy he looked at me and kissed me all laong my neck ""I love you. ..."" I said faintly my body trembling"
+When I came it was as if all of my emotions were laid out for everyone to see it felt wonderful I wanted more but that would be greedy he looked at me and kissed me all laong my neck ""I love you. ..."" I said faintly my body trembling",ERROR: Prompt has too many tokens for text-davinci-003,ERROR: Prompt has too many tokens for text-davinci-003
 """to build a feel-good fantasy around a vain dictator-madman 
 Question: Is this sentence positive or negative?""
 Answer: ""negative""
@@ -264,7 +280,7 @@ Answer: ""positive""
 ---
 ""chilling, well-acted, and finely directed : david jacobson's dahmer. 
 Question: Is this sentence positive or negative?""
-Answer:"""
+Answer:""","positive""","positive"""
 """to capture these musicians in full regalia 
 Question: Is this sentence positive or negative?""
 Answer: ""positive""
@@ -275,16 +291,20 @@ Answer: ""negative""
 ---
 ""(lawrence bounces) all over the stage, dancing, running, sweating, mopping his face and generally displaying the wacky talent that brought him fame in the first place. 
 Question: Is this sentence positive or negative?""
-Answer:"""
-#Deppression is real. Partners w/ #depressed people truly dont understand the depth in which they affect us. Add in #anxiety &amp;makes it worseWhat is the emotion of the text?Hint: joy,optimism,sadness,anger|||sadnessYes #depression &amp; #anxiety are real but so is bein #grateful &amp; #happiness \nI choose how i wanna live MY life not some disorderWhat is the emotion of the text?Hint: joy,optimism,sadness,anger|||
+Answer:""","positive""","positive"""
+#Deppression is real. Partners w/ #depressed people truly dont understand the depth in which they affect us. Add in #anxiety &amp;makes it worseWhat is the emotion of the text?Hint: joy,"
+
+Sadness","
+
+Sadness"
 """Association for Clinical and Translational Science MENU About ► Meet ACTS Leadership Committees Special Interest Groups Contact Commitment to DEI TranslationalScience 2022Register to join usin Chicago, taking place April 20-22, 2022 Membership ► Join Benefits Current Members TranslationalScience 2022Register to join usin Chicago, taking place April 20-22, 2022 Publications ► Advocacy JCTS ACTS Connection ACTS News TranslationalScience 2022Register to join usin Chicago, taking place April 20-22, 2022 Professional Development ► Career Center Learning Library Upcoming Events TranslationalScience 2022Register to join usin Chicago, taking place April 20-22, 2022 Translational Science ► Registration Program Deadlines Sponsorship Awards TranslationalScience 2022Register to join usin Chicago, taking place April 20-22, 2022 About Meet ACTS Leadership Committees Special Interest Groups Contact Commitment to DEI TranslationalScience 2022Register to join usin Chicago, taking place April 20-22, 2022 Membership Join Benefits Current Members TranslationalScience 2022Register to join usin Chicago, taking place April 20-22, 2022 Publications Advocacy JCTS ACTS Connection ACTS News TranslationalScience 2022Register to join usin Chicago, taking place April 20-22, 2022 Professional Development Career Center Learning Library Upcoming Events TranslationalScience 2022Register to join usin Chicago, taking place April 20-22, 2022 Translational Science Registration Program Deadlines Sponsorship Awards TranslationalScience 2022Register to join usin Chicago, taking place April 20-22, 2022 Member Login Research. Education. Advocacy. Mentoring. ACTS supports those who are committed to applying scientific methodologies to accelerate advances in human health. Explore ACTS ANNUAL MEETING Translational Science 2023 Save the date for next year's Translational Science meeting to experience the future of translational science and clinical research in Washington, DC from April 19-21, 2023. Member Institutions Access member benefits by registering with your institution Translational Science Learn more about our annual meeting Journal of Clinical and Translational Science Share innovative advances in the translational science area to the global research community through JCTS Special Interest Groups (SIGs) Special Interest Groups (SIGs) provide a structured opportunity within ACTS for individuals to network and participate in knowledge and resource sharing among peers related to the field of clinical research and translational science. View all SIGs ACTS Learning Library Looking to expand your knowledge of the components of clincal and translational research? Browse the ACTS Learning Library for valuable educational offerings, including partner webinars and session recordings from past Translational Science meetings. Explore the Learning Library Special Interest Groups (SIGs) Special Interest Groups (SIGs) provide a structured opportunity within ACTS for individuals to network and participate in knowledge and resource sharing among peers related to the field of clinical research and translational science. View all SIGs Association for Clinical and Translational Science 2001 K Street NW, 3rd Floor North, Washington, D.C. 20006 Phone 202.367.1119 | info@actscience.org Terms of Service | Privacy Policy | Bylaws | Meet ACTS © Copyright 2021 Association for Clinical and Translational Science. All Rights Reserved. All material, files, logos and trademarks within this site are properties of their respective organizations. Host Login Test Login Search""
-TLDR:""'"
+TLDR:""'","Association for Clinical and Translational Science (ACTS) Menu: About, Membership, Publications, Professional Development, Translational Science. ACTS provides member benefits, publications, learning library, special interest groups, and hosts the Translational Science 2023 meeting in Washington DC. Visit the site for more information.""","Association for Clinical and Translational Science' provides members with benefits such as access to publications, professional development, and translational science. They also host an annual meeting, Translational Science 2023, taking place in Washington, DC from April 19-21, 2023. Members can access member benefits by registering with their institution. Special Interest Groups (SIGs) provide a structured opportunity for individuals to network and participate in knowledge and resource sharing. The ACTS Learning Library provides educational offerings, including partner webinars and session recordings from past Translational Science meetings."
 """Key Staff | Schoen Insulation Services Warning: A non-numeric value encountered in /home/customer/www/schoenins.com/public_html/wp-content/themes/Avada/includes/dynamic_css.php on line 6515 HOME CAPABILITIES Machining Turning Cutting Assembly Materials Other MARKETS SERVED Power Generation Aerospace & Military Oil & Gas Medical Water OEM & Other REQUEST A QUOTE ABOUT US Company Key Staff Mission News Careers CONTACT US Go to...HOME CAPABILITIES Machining Turning Cutting Assembly Materials Other MARKETS SERVED Power Generation Aerospace & Military Oil & Gas Medical Water OEM & Other REQUEST A QUOTE ABOUT US Company Key Staff Mission News Careers CONTACT US Key Staff Key StaffSkyAdmin2015-04-14T13:11:05+00:00 Stephen Schoen President & CEO Stephen graduated with a BA from Furman University in 1984. After graduating he joined the First National Bank of Atlanta as a management trainee. He left FNBA in 1986 to join Complete Reading as a sales engineer in the NE U.S. He was promoted to marketing manager at CR’s parent company in 1987. In 1988 Stephen joined GE as the SE sales manager for GE’s Apparatus Service Division. In 1989 Stephen and his father Lloyd had an idea to start a rigid fabrication company focusing on offering world-class service and quality combined with low cost pricing. Thus Schoen Insulation was formed. For the past 20 years Stephen has lead Schoen Insulation to become the preeminent non-metallic machine shop in the U.S. with the simple mission of being the low cost supplier of non-metallic machined, cut and turned parts. His passions include serving his family, God, his business, Habitat for Humanity, and trying to play golf more than 3 times per year. Robert Kimball Vice President of Operations Bob graduated from Miami University in 1984 with a Business Degree in Finance. He began his plastics career with Spaulding Composites in 1984 as a sales trainee and handled sales territories in Ohio and then Southeast U.S. until 1993. In the summer of 1993 Bob joined Westinghouse Micarta as the SE Sales Representative. In 1994 he moved to South Carolina to become the Micarta Industrial Sales Manager. When International Paper took over Micarta, Bob became the Industrial Products Business Manager reporting to the Specialty Products Divison in Maryland. In 1997, Bob joined Schoen Insulation as Sales Manager to help with the growth of the company. Duties at Schoen have included overseeing Sales, Purchasing and Quality for several years. After Schoen expanded their facility several years ago he became more involved in the operations side of the business. Currently, Bob is the VP of Operations, minority owner and will do whatever is necessary to take care of our customers. Chris Hailand Sales Manager Chris graduated with a BS-Industrial Technology from State University College at Buffalo in 1982. He began his career with Spaulding Composites, a manufacturer and fabricator of composite materials in 1984, rising in the ranks from Inside Sales, to Outside Sales, then to Regional Sales Manager and finally to National Sales Manager. He left Spaulding in 1997 to join ART (Advanced Refractory Technology), a Buffalo, NY based company focused on the creation of non-oxide ceramics with principle applications in nuclear power, military and electronic applications. In 2001 Chris joined Schoen Insulation Services as a Technical Sales Manager covering the northeast U.S. and the Midwestern U.S. In 2008 he was promoted to National Sales Manager. Chris’ strengths include identifying and directing new business and new market development, while focused on our Schoen core competencies’ in the area of Power Generation and heavily machined and turned parts. Danny Goodman Plant Manager Bio Coming Soon! Chris Renaud QC Manager Bio Coming Soon! SCHOEN INSULATION850 Univeter Road Canton, Georgia 30115 Phone: 770-345-5156 Fax: 770-345-5128 CapabilitiesMachining Turning Cutting Assembly Materials Other Recent News Upcoming New Equipment ISO 9001:2008 Certificate Copyright 2015 Schoen Insulation Services | Web Design by AtlantaSky.""
-TLDR:""'"
+TLDR:""'","Key Staff' Stephen Schoen, the President & CEO of Schoen Insulation, has been at the company since 1989. Robert Kimball is the Vice President of Operations, Chris Hailand is the Sales Manager, Danny Goodman is the Plant Manager, and Chris Renaud is the QC Manager. Schoen Insulation Services is based in Canton, Georgia and has recently acquired new equipment and an ISO 9001:2008 certificate. ""","Key Staff' is a page on the Schoen Insulation Services website that provides information about the company's key staff members, including Stephen Schoen, Robert Kimball, Chris Hailand, Danny Goodman, and Chris Renaud. It also provides information about their backgrounds and roles in the company."
 """Major County Sheriffs of America Toggle High ContrastToggle Font size Major County Sheriffs of America Home Leadership Members Back Members Only Pay Dues News Back News COVID-19 Impact On Our MCSA Member Agencies Events Corporate Partners Back Current Partners Become A Corporate Partner Pay Annual Fee Resources Back The Latest Resources On Coronavirus (COVID-19) Next Generation 9-1-1 Coalition Monthly Webinar Library Contact Us Training Back Collaborative Reform Initiative Technical Assistance Center (CRI-TAC) What's New At Major County Sheriffs of America A Message from MCSA President Sheriff Dennis M. Lemma . Sanford, Florida Read More Save the Date for the 2022 MCSA Summer Conference. Visit our Events Page See Upcoming Events Read about what makes Sheriff John D. Idleburg Spotlight Sheriff. Lake County (Illinois) Watch Interview A Message from MCSA President Sheriff Dennis M. Lemma . Sanford, Florida Read More Save the Date for the 2022 MCSA Summer Conference. Visit our Events Page See Upcoming Events Read about what makes Sheriff John D. Idleburg Spotlight Sheriff. Lake County (Illinois) Watch Interview A Message from MCSA President Sheriff Dennis M. Lemma . Sanford, Florida Read More Save the Date for the 2022 MCSA Summer Conference. Visit our Events Page See Upcoming Events Read about what makes Sheriff John D. Idleburg Spotlight Sheriff. Lake County (Illinois) Watch Interview ‹›Our Mission:LEADING THE WAY FOR A SAFER AMERICAThe Major County Sheriffs of America is a professional law enforcement association of the 113 largest Sheriff's offices representing counties or parishes with 500,000 population or more. We are dedicated to preserving the highest integrity in law enforcement and the elected Office of the Sheriff. Our membership represents over 130 million citizens.The Major County Sheriffs of America is a united and powerful voice of community leaders on issues of public concern through: Sense of Urgency Serving with speed and accuracy for maximum positive outcomes because America’s safety is always at stake. Communication Delivering real time, relevant communications with stakeholders using all state of the art systems. Education Develop and promote innovative law enforcement and detention training. Advocacy Educate and foster relationships with legislators, government agencies, and stakeholders while proactively identifying relevant issues. Research Establish standards and processes based upon science, technology, and time proven best practices with public and private partnerships.Partner CornerThank you to our spotlight partner of the month: Securus TechnologiesThank you to our spotlight partner of the month: Securus Technologies™ Securus Technologies™ has been proudly supporting Law Enforcement since 1986 and serves more than 3,400 public safety, law enforcement and corrections agencies and over 1.2 million incarcerated individuals across North America, through superior communication services.As the largest incarcerated individual communications provider, Securus helps maintain relationships between incarcerated individuals and their family and friends through easy to use incarcerated individual calling options and Video ConnectSM from anywhere using Apple or Android smartphones, tablets or PCs.Learn more at https://securustech.net MembershipIf you'd like to become a member of the Major County Sheriffs of America click here to register.Contact Information Major County Sheriffs of America 100 Eslinger Way Sanford, FL 32773 Contact Us Helpful Pages Resources News Our Members Our Corporate PartnersLeadership Conferences Web Services by Geoffresh Inc. © 1998 - 2022 Major County Sheriffs of America 100 Eslinger Way, Sanford, FL 32773SitemapContact UsSearch Form""
-TLDR:""'"
+TLDR:""'","The Major County Sheriffs of America is a professional law enforcement association of the 113 largest Sheriff's offices representing counties or parishes with 500,000 population or more. They are dedicated to preserving the highest integrity in law enforcement and the elected Office of the Sheriff. They have members representing over 130 million citizens. They are united and have a strong voice on issues of public concern by delivering real time, relevant communications with stakeholders using all state of the art systems, developing and promoting innovative law enforcement and detention training, educating and fostering relationships with legislators, government agencies, and stakeholders, and by establishing standards and processes based upon science, technology, and time-proven best practices with public and private partnerships. They have corporate partners such as Securus Technologies that support law enforcement. To become a member of the Major County Sheriffs of America, click the link. The contact information is provided at the bottom of the page.","The Major County Sheriffs of America is a professional law enforcement association of the 113 largest Sheriff's offices representing counties or parishes with 500,000 population or more. They are dedicated to preserving the highest integrity in law enforcement and the elected Office of the Sheriff. Their membership represents over 130 million citizens. They provide sense of urgency, communication, education, advocacy, and research. They have a spotlight partner of the month, Securus Technologies, and offer membership to those interested. They are located at 100 Eslinger Way, Sanford, FL 32773."""
 """What We Do – Noah Homes Home Who We Are Executive Team Board of Directors Noah’s Foundation A Day in the Life Notification of Title VI What We Do Housing Memory Care Advocacy & Resources Noah Homes in the News Video Library Events at Noah Homes Work With Us Career Opportunities Volunteer Community Partners Donate Today Donate Today Planned Giving Become a Monthly Donor View our Casa Wishlists Sponsor Corporate Sponsorships Summerfest Enchanted Village Noah’s PERCH Events Enchanted Village Noah’s PERCH Time for ChangeNoah Homes is not an institution, it is a growing family. For many of our residents, we are the only family they have. As people with disabilities face greater challenges than ever before, we are here to make sure they are receiving the care they need in the home they deserve. Elevating the Standard of CareIn 2017, we opened two of the first memory care homes in the nation specifically for people with developmental disabilities. And that’s just the beginning. Donate Now Video Library 1 3 1 3 Our Programs Work The smiling faces that greet you as you walk into a home, in addition to the partnerships we have formed throughout the community, are just two of the many reasons Noah Homes is considered a leader in supporting people with intellectual/developmental disabilities and their families. Noah Homes Program According to the Family Caregiving Alliance, 29% of the U.S. adult population is providing care to someone who is ill, disabled or aged. This number is only expected to grow as the aging population of 65+ will more than double between the years 2000 and 2030. Noah Homes is not only a place of refuge for people with developmental disabilities, but also for those that are determined to ensure their loved one has a happy and loving home for a lifetime. A supportive environment encourages each person to expand his or her horizons and to become more independent while learning both to explore and enjoy what the surrounding community has to offer. Noah Homes’ programs are designed to be person-centered and to consider the personal preferences and choices of each resident. Emphasis is placed on experiences that will foster the growth of the whole person, promote self-esteem and enable each individual to develop new skills. Leisure and recreational activities are vital to well-being including on-campus dances, parties, and special occasions. In addition, a variety of outings are offered in the community, including visits to Sea World, the San Diego Zoo, movies, dining, harbor excursions, picnics, concerts, spectator sports, theater, and cultural performances. Support the Journey Donate Now Meet Bryan Learning how to live independently at Noah Homes Noah Homes: A Perfect Home for Michael Meet Roz Zoo Volunteer Extraordinaire Sam the Cooking Guy Wins Golden Spoon Award at Summerfest Take Me Out to the Ball Game We're #FriarFaithful here! Staff & Residents Develop Afternoon Programs Dance contests, basketball, and more Now Open: Pinkee’s Pantry $1.5 million, 3,200 sq. ft. warehouse fully funded by Kim Lauridsen Team Anderson Plants Support at Noah Homes Supervisor Anderson's support has been crucial in Noah Homes' advocacy Navigation Home About Us Contact Us Careers Volunteer Noah Homes / 12526 Campo Rd, Spring Valley, CA 91978⇧© OpenStreetMap contributors.»⤢ Search © 2022 Noah Homes. 12526 Campo Rd • Spring Valley, CA 91978 / 619.660.6200 / EIN: 95-3821566 Home Who We Are Back Executive Team Board of Directors Noah’s Foundation A Day in the Life Notification of Title VI What We Do Back Housing Memory Care Advocacy & Resources Noah Homes in the News Video Library Events at Noah Homes Work With Us Back Career Opportunities Volunteer Community Partners Donate Today Back Donate Today Planned Giving Become a Monthly Donor View our Casa Wishlists Sponsor Back Corporate Sponsorships Summerfest Enchanted Village Noah’s PERCH Events Back Enchanted Village Noah’s PERCH Notifications""
-TLDR:""'"
+TLDR:""'","Noah Homes is a growing family that provides housing, memory care, advocacy, and resources to people with developmental disabilities. They offer leisure activities and recreational opportunities, and their programs are designed to be person-centered and to consider the personal preferences and choices of each resident. They also have partnerships with the community, and they have established corporate sponsorships and donations.","Noah Homes is a family for people with disabilities, providing housing, memory care, advocacy, and resources. They offer career opportunities, volunteer opportunities, and donations. They also have events such as Summerfest, Enchanted Village, and Noah's PERCH."""
 "**Choose the option that best categorizes the specified product. Only choose from 'Options':**
 
 
@@ -314,7 +334,7 @@ Options: Mobility & Accessibility,Shaving & Grooming,Oral Care,Biometric Monitor
 Product: HeaEyes Sleep Massager
 
 
-Category:"
+Category:", Massage & Relaxation, Massage & Relaxation
 "--
 Content: EXPRESS INDIFFERENCE
 Tone: Rude
@@ -344,7 +364,7 @@ Content: OFFER SLICE OF CAKE
 Tone: Submissive
 Style: Casual
 Topic: Birthdays
-Line:"
+Line:"," Here, have a piece of cake! I hope it will make your birthday even more special.", Would you like a piece of cake? I made it special for you.
 "--
 Me: Katie Harris, Head of Business Development at Moda, software that automates drafting of cold reachout emails with AI.
 Target: Josh McGee, VP of Business Development at Blackhawk, a company that manages sales pipelines. Josh has been at Blackhawk for 7 years and helped scale the bizdev team to 20 people.
@@ -359,7 +379,7 @@ Message: Hey Bret,\nI hope this email finds you well. I wanted to reach out beca
 Me: Jane Smith, SDR at SurveyMonkey, software for creating and monitoring surveys.
 Target: Bob Francis, Product Manager at Facebook, who frequently does user interviews that require surveys.
 Objective: Compliment Bob on the work he has done, and inquire as to whether there are existing issues with the surveys he provides to his users. Try to schedule a call with Bob to discuss how SurveyMonkey could help address the shortcomings of their existing survey software.
-Message:"
+Message:"," Hi Bob,\nI wanted to reach out to you and congratulate you on the amazing work you have done as a Product Manager for Facebook. As a fellow Product Manager, I have a deep respect for the dedication and effort it takes to bring ideas to life.\nI was wondering if you have faced any issues when it comes to surveys for your user interviews. SurveyMonkey allows you to create surveys quickly and measure responses in real-time to get the most accurate data. Would you be available for a call so we could discuss how SurveyMonkey could help with your current survey software?\nThanks,\nJane"," Hi Bob,\nI hope this email finds you well. I wanted to reach out because I've been following your work at Facebook and I'm really impressed with the user interviews you've been doing.\nI'm curious - are there any issues you're having with the surveys you provide to your users? If so, I'd love to discuss how SurveyMonkey could help address the shortcomings of your existing survey software. Are you available for a quick call?\nBest,\nJane"
 "---Article---
 Sydney, May 16, 2022 – Asia-Pacific and Japan (APJ) hyperscale data centre specialist, AirTrunk is strengthening its presence in Japan, announcing plans to build a new 110+ megawatt (MW) hyperscale data centre in West Tokyo, named AirTrunk TOK2 (TOK2).
 
@@ -396,16 +416,91 @@ As with TOK1, AirTrunk will continue to work with Japanese construction conglome
 
 ---Summary---
 Here are the most important points (briefly worded) summarizing the article:
-1."
+1."," AirTrunk is strengthening its presence in Japan with the building of a new 110 MW hyperscale data centre, TOK2, in West Tokyo. 
+2. TOK2 will join AirTrunk's rapidly expanding platform of data centres, offering 1.2 GW of capacity in total.
+3. The new data centre is strategically located to serve a major cloud availability zone and provide location diversity for customers in the Tokyo region. 
+4. AirTrunk's TOK2 will be delivered with AirTrunk's trademark speed, scale, reliability, and efficiency and maintain their high efficiency and sustainability standards.
+5. AirTrunk's multi-billion-dollar investment is supporting the Japan Digital Agency's path to digitalisation, and creating thousands of jobs.
+6. AirTrunk will continue to work with Japanese construction conglomerate, Daiwa House Industry Co., Ltd, for the development and operations of TOK2."," AirTrunk is expanding its presence in Japan by building a new 110+ MW hyperscale data centre in West Tokyo, named AirTrunk TOK2.
+2. The new data centre will join AirTrunk's rapidly expanding APJ platform, offering 1.2 GW of capacity.
+3. The facility will be delivered with AirTrunk's trademark speed, scale, reliability, and efficiency, and is designed to an industry-low power usage effectiveness (PUE) of 1.15.
+4. AirTrunk's multi-billion-dollar investment into the economy will support the Japan Digital Agency's path toward digitalisation.
+5. AirTrunk will continue to work with Japanese construction conglomerate, Daiwa House Industry Co., Ltd on the development of TOK2."
 "10 Traits of emotionally mature people:
  
 
 
- 1.-"
+ 1.-"," Emotionally mature people are self-aware.
+ 2.- They take responsibility for their words and actions.
+ 3.- They recognise and acknowledge their emotions and appreciate how they affect themselves and others.
+ 4.- They stay calm in stressful situations and think before they act.
+ 5.- They are independent and can make decisions on their own.
+ 6.- They actively listen and communicate without judgement.
+ 7.- They are open-minded and can see different perspectives.
+ 8.- They are not afraid of change and can adapt to it.
+ 9.- They are accepting of themselves and others.
+ 10.- They have a strong sense of purpose and stay focused on their goals."," They are self-aware and understand their emotions.
+ 2.- They take responsibility for their actions.
+ 3.- They are able to express their emotions in a healthy way.
+ 4.- They are able to forgive and let go of grudges.
+ 5.- They are able to accept criticism without becoming defensive.
+ 6.- They are able to maintain healthy boundaries.
+ 7.- They are able to communicate effectively.
+ 8.- They are able to empathize with others.
+ 9.- They are able to manage their stress in a healthy way.
+ 10.- They are able to make decisions based on logic and reason."
 "10 movie actors who were fired and replaced during filming:
- 1."
+ 1."," Sean Young in Blade Runner (1982) - Replaced by Daryl Hannah
+ 2. Sylvester Stallone in The Expendables (2010) – Replaced by Bruce Willis 
+ 3. Val Kilmer in The Island of Dr. Moreau (1996) – Replaced by David Thewlis 
+ 4. Nicolas Cage in Superman Lives (1998) – Replaced by Tim Burton
+ 5. Eric Stoltz in Back to the Future (1985) – Replaced by Michael J. Fox 
+ 6. Tom Sizemore in Saving Private Ryan (1998) – Replaced by Edward Burns
+ 7. Rachelle Lefevre in The Twilight Saga: New Moon (2009) – Replaced by Bryce Dallas Howard
+ 8. James Caan in Superman (1978) – Replaced by Christopher Reeve 
+ 9. Harrison Ford in Apocalypse Now (1979) – Replaced by Martin Sheen 
+10. Harvey Keitel in The Irishman (2019) – Replaced by Robert De Niro"," Sean Young (Replaced by Kim Basinger in Batman)
+ 2. Eric Stoltz (Replaced by Michael J. Fox in Back to the Future)
+ 3. Sylvester Stallone (Replaced by Arnold Schwarzenegger in The Terminator)
+ 4. Shia LaBeouf (Replaced by Miles Teller in Fury)
+ 5. Charlie Sheen (Replaced by Ashton Kutcher in Two and a Half Men)
+ 6. Edward Norton (Replaced by Mark Ruffalo in The Incredible Hulk)
+ 7. Harrison Ford (Replaced by Brendan Fraser in The Mummy)
+ 8. Tom Sizemore (Replaced by William Fichtner in Pearl Harbor)
+ 9. James Remar (Replaced by Jeff Goldblum in The Fly)
+10. Terrence Howard (Replaced by Don Cheadle in Iron Man 2)"
 "10-step plan to lose 10 lbs in 1 month:
  
 
 
- 1."
+ 1."," Set a realistic goal. Start by setting a realistic goal of losing 10 lbs in one month. Make sure this timeline is achievable without compromising your health in any way.
+
+2. Create an exercise plan. Make exercising a part of your daily routine by creating an exercise plan that offers a combination of aerobic exercises, strength training, and stretching. Aim for at least 30 minutes of moderate exercise each day.
+
+3. Eat healthy. Make healthy eating a priority. Incorporate a variety of foods into your diet, such as fruits, vegetables, whole grains, lean proteins, healthy fats, and low-fat dairy. Cut back on unhealthy processed and fast foods.
+
+4. Track what you eat. Track your daily food intake to ensure that you’re eating the right amount of calories and nutrients.
+
+5. Cut back on sugar and sodium. Reduce the amount of sugar and sodium in your diet, as these can contribute to weight gain.
+
+6. Drink plenty of water. Staying hydrated is essential for weight loss. Make sure to drink plenty of water throughout the day to keep your body hydrated and your metabolism working efficiently.
+
+7. Create a meal routine. Create a routine for meal times and snacks. Stick to"," Set realistic goals: Aim to lose 1-2 pounds per week.
+
+2. Track your calorie intake: Use a food tracking app or website to track your daily calorie intake.
+
+3. Increase your physical activity: Aim for at least 30 minutes of physical activity per day.
+
+4. Cut out unhealthy foods: Avoid processed and sugary foods.
+
+5. Eat more fruits and vegetables: Increase your intake of nutrient-dense foods.
+
+6. Drink more water: Aim for 8-10 glasses of water per day.
+
+7. Get enough sleep: Aim for 7-8 hours of sleep per night.
+
+8. Reduce stress: Take time for yourself and practice relaxation techniques.
+
+9. Join a support group: Connect with others who are trying to lose weight.
+
+10. Reward yourself: Celebrate your successes and reward yourself for reaching milestones."

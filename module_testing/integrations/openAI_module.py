@@ -4,6 +4,7 @@ import csv
 from typing import List
 from datetime import datetime
 import os
+import tiktoken
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -52,6 +53,25 @@ def add_columns(dataframe, new_column, data):
 def completion_with_backoff(**kwargs):
     return openai.Completion.create(**kwargs)
 
+def init_tiktoken(): 
+    # intit tiktoken with GPT3 models
+    return tiktoken.get_encoding("gpt2")
+
+# determines if prompt length is under model limits
+def token_limit(encoding,model,prompt):
+    num_tokens = encoding.encode(prompt)
+    print("NUM TOKENS: ", str(len(num_tokens)))
+    if(model == "text-davinci-003"):
+        if len(num_tokens) <= 4000:
+            return True
+        else:
+            return False
+    else:
+        if len(num_tokens) <= 2048:
+            return True
+        else:
+            return False
+
 # Main Function openAI_function():
 # Purpose: Run user's .csv file through various openAI models; models and settings are chosen by the user and passed in as arguments to this function
 # Inputs: 
@@ -67,6 +87,9 @@ def openAI_function(key, FILEPATH, models: List[Models], promptColumn):
     # openai.api_key = key
     openai.api_key = openai_key
 
+    # eventually, we may need to init with different encodings - for now this is hard coded for gpt3
+    encoding = init_tiktoken()
+
     # Check if file is compatible; if compatible, store prompts as dataframe
     with open(FILEPATH, 'r') as file:
         try:
@@ -81,10 +104,15 @@ def openAI_function(key, FILEPATH, models: List[Models], promptColumn):
     for model in models:
         CompletionsList = []
         for index, row in prompts.iterrows():
-            completion = completion_with_backoff(engine=model.engine, prompt=row[promptColumn], temperature=model.temperature, max_tokens=model.max_tokens, 
-                                                 top_p=model.top_p, frequency_penalty=model.frequency_penalty, presence_penalty=model.presence_penalty)
-            CompletionsList.append(completion.choices[0].text)
-            # print(f"{index+1}")
+            # check that prompt is shorter than engines allowed maximum
+            if token_limit(encoding, model.engine, row[promptColumn]):
+                completion = completion_with_backoff(engine=model.engine, prompt=row[promptColumn], temperature=model.temperature, max_tokens=model.max_tokens, 
+                                                    top_p=model.top_p, frequency_penalty=model.frequency_penalty, presence_penalty=model.presence_penalty)
+                CompletionsList.append(completion.choices[0].text)
+            else: 
+                length_error = f"ERROR: Prompt has too many tokens for {model.engine}"
+                CompletionsList.append(length_error)
+            print("CURR IDX: ", index)
         add_columns(prompts, model.config_name, CompletionsList)
     
     # After all columns are writen to dataframe, write to a new copy of the user's .csv file called FILEPATH_Completions.csv

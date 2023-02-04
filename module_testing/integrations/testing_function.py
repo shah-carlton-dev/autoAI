@@ -6,6 +6,6 @@ models.append(Models("davinci custom config 2", "text-davinci-003", "", 0.1, 256
 
 print("models configured.  starting completion process")
 
-openAI_function(key=0, models=models, FILEPATH='./automation_testing/sample_data/test26.csv', promptColumn="prompt")
+openAI_function(key=0, models=models, FILEPATH='./module_testing/sample_data/test26.csv', promptColumn="prompt")
 
 print("success")
