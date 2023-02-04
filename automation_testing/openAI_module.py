@@ -70,7 +70,7 @@ def openAI_function(key, FILEPATH, models: List[Models], promptColumn):
             print("ERROR: Prompt column not found in file.")
             return
     
-    print("file is compatible. Feeding prompts to model configurations....")
+    # print("file is compatible. Feeding prompts to model configurations....")
 
     # Create outer for loops to iterate through each model; initialize CompletionsList to be emptied at the start of each new model; create inner for loop to iterate through prompts
     for model in models:
@@ -79,12 +79,12 @@ def openAI_function(key, FILEPATH, models: List[Models], promptColumn):
             completion = completion_with_backoff(engine=model.engine, prompt=row[promptColumn], temperature=model.temperature, max_tokens=model.max_tokens, 
                                                  top_p=model.top_p, frequency_penalty=model.frequency_penalty, presence_penalty=model.presence_penalty)
             CompletionsList.append(completion.choices[0].text)
-            print(f"{index+1}")
+            # print(f"{index+1}")
         add_columns(prompts, model.config_name, CompletionsList)
     
     # After all columns are writen to dataframe, write to a new copy of the user's .csv file called FILEPATH_Completions.csv
     write_to_copy(FILEPATH, prompts)
-    print("success.  new file created with model completions")
+    # print("success.  new file created with model completions")
 
 
 
