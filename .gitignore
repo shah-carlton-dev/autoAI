@@ -4,3 +4,4 @@ module_testing/.env
 data-processor-backend/.env
 *.pyc
 *.db
+**/uploads/**

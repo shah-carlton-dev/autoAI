@@ -1,4 +1,5 @@
-import os, datetime
+import os
+from datetime import datetime
 from glob import glob
 
 from flask import jsonify, request, send_file
@@ -11,24 +12,27 @@ from app.extensions import db
 from app.config import Config
 from app.utils import allowed_file
 
+@bp.route('/a')
+def a():
+	return jsonify(os.path.realpath(os.path.dirname(__package__)))
+
 # POST new file
 # request = multipart form with file
 # returns = {message:"information about the request outcome", status:<http code>}
 @bp.route('/upload', methods=['POST'])
 @cross_origin(origin='*')
 def upload_file():
-	print("hit")
 	title = request.form.get('title')
 	description = request.form.get('description')
 	model = request.form.get('model')
 	uploaded_file = request.files['file']
 	if uploaded_file and allowed_file(uploaded_file.filename):
 		filename = secure_filename(uploaded_file.filename)
-		file_path = os.path.join(Config['UPLOAD_FOLDER'], filename)
+		file_path = os.path.join(Config.UPLOAD_FOLDER, filename)
 		timestamp = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
 		file_name, file_extension = os.path.splitext(file_path)
-		uploaded_file.save(file_name+'_'+timestamp+file_extension)
 		file_path = file_name+'_'+timestamp+file_extension
+		uploaded_file.save(os.path.abspath(os.path.dirname(__name__))+'/../'+file_path)
 		new_file = File(title, description, model, file_path, filename.split(".")[0]+'_'+timestamp+file_extension, timestamp)
 		db.session.add(new_file)
 		db.session.commit()
@@ -74,8 +78,8 @@ def delete_file():
 	per_page = request.json["per_page"]
 	success = True
 	delete_file = db.get_or_404(File, file_id)
-	if os.path.exists(delete_file.file_path):
-		os.remove(delete_file.file_path)
+	if os.path.exists('../'+delete_file.file_path):
+		os.remove('../'+delete_file.file_path)
 		db.session.delete(delete_file)
 		db.session.commit()
 	else:
@@ -106,7 +110,7 @@ def delete_file():
 @bp.route('/deleteAll', methods=['DELETE'])
 @cross_origin(origin='*')
 def delete_all_files():
-	files = glob.glob(Config['UPLOAD_FOLDER']+"/*")
+	files = glob('../'+Config.UPLOAD_FOLDER+"/*")
 	for fl in files:
 		os.remove(fl)
 	delete = File.query.delete()
@@ -121,8 +125,7 @@ def delete_all_files():
 def download_file():
 	file_id = request.json["file_id"]
 	file_doc = db.get_or_404(File, file_id)
-	# return jsonify(file_doc.file_name, app.config['UPLOAD_FOLDER'])
-	if (file_doc is not None) and (os.path.exists(file_doc.file_path)):
-		return send_file("uploads/"+file_doc.file_name, download_name=file_doc.title,as_attachment=True)
+	if (file_doc is not None) and (os.path.exists('../'+file_doc.file_path)):
+		return send_file("../uploads/"+file_doc.file_name, download_name=file_doc.title,as_attachment=True)
 	else:
 		return jsonify({"status": 404, "message":"file not found", "file":file_id})
