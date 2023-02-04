@@ -1,3 +1,6 @@
 data-processor-front-end/node_modules
 node_modules
 module_testing/.env
+data-processor-backend/.env
+*.pyc
+*.db
