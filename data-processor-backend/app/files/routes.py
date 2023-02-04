@@ -125,6 +125,7 @@ def delete_all_files():
 def download_file():
 	file_id = request.json["file_id"]
 	file_doc = db.get_or_404(File, file_id)
+	print(file_doc)
 	if (file_doc is not None) and (os.path.exists('../'+file_doc.file_path)):
 		return send_file("../uploads/"+file_doc.file_name, download_name=file_doc.title,as_attachment=True)
 	else:

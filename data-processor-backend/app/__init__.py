@@ -3,6 +3,7 @@ from flask import Flask
 from app.config import Config
 from app.extensions import db
 
+# structure from https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy
 
 def create_app(config_class=Config):
 	app = Flask(__name__)
@@ -23,6 +24,6 @@ def create_app(config_class=Config):
 
 	@app.route('/test/')
 	def test():
-		return None
+		return True
 
 	return app
