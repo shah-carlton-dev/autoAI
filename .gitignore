@@ -6,3 +6,5 @@ data-processor-backend/.env
 *.db
 **/uploads/**
 .DS_Store
+data-processor-front-end/build
+# data-processor-front-end/b
