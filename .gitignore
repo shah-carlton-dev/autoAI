@@ -7,4 +7,5 @@ data-processor-backend/.env
 **/uploads/**
 .DS_Store
 data-processor-front-end/build
-# data-processor-front-end/b
+data-processor-front-end/.env
+data-processor-front-end/package-lock.json
