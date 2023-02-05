@@ -5,3 +5,4 @@ data-processor-backend/.env
 *.pyc
 *.db
 **/uploads/**
+.DS_Store
