@@ -1,10 +1,35 @@
 import { Outlet, Link } from "react-router-dom";
+import { useTheme } from '@mui/material/styles';
+import { useDispatch } from 'react-redux';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
+import { toggleTheme } from '../stores/global_slice';
+import Box from '@mui/material/Box';
+import IconButton from '@mui/material/IconButton';
 
 const Layout = () => {
+  const theme = useTheme();
+  const dispatch = useDispatch();
+
   return (
     <div>
-      {/* A "layout route" is a good place to put markup you want to
-        share across all the pages on your site, like navigation. */}
+      <Box
+        sx={{
+          display: 'flex',
+          width: '100%',
+          alignItems: 'center',
+          justifyContent: 'center',
+          bgcolor: 'background.default',
+          color: 'text.primary',
+          borderRadius: 1,
+          p: 3,
+        }}
+      >
+        {theme.palette.mode} mode
+        <IconButton sx={{ ml: 1 }} onClick={() => dispatch(toggleTheme())} color="inherit">
+            {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+        </IconButton>
+      </Box>
       <nav>
         <ul>
           <li>

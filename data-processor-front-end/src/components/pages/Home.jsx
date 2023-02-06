@@ -1,8 +1,10 @@
-import Counter from '../reusable/Counter'
+import Counter from '../reusable/Counter';
 
 const Home = () => {
     return (
-        <div>Home: <Counter /></div>
+        <div>
+            Home: <Counter />
+        </div>
     );
 }
 
