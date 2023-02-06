@@ -19,8 +19,7 @@ def create_job():
 	file_id = request.json["file_id"]
 	user_id = request.json["user_id"]
 	if api_id and file_id and user_id:
-		timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-		new_job = Job(api_id, file_id, user_id, timestamp)
+		new_job = Job(api_id, file_id, user_id)
 		db.session.add(new_job)
 		db.session.commit()
 		return jsonify({"message": "Job created successfully.", "status": 200})
