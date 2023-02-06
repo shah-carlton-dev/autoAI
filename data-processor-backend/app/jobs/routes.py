@@ -19,7 +19,7 @@ def create_job():
 	file_id = request.json["file_id"]
 	user_id = request.json["user_id"]
 	if api_id and file_id and user_id:
-		new_job = Job(api_id, file_id, user_id)
+		new_job = Job(api_id = api_id, file_id = file_id, user_id = user_id)
 		db.session.add(new_job)
 		db.session.commit()
 		return jsonify({"message": "Job created successfully.", "status": 200})
@@ -46,7 +46,7 @@ def dispatch():
 		api_doc = db.get_or_404(API, r.api_id)
 
 		# create job record
-		new_job = Job(api_doc.id, file_doc.id, issuer_id)
+		new_job = Job(apid_id = api_doc.id, file_id = file_doc.id, user_id = issuer_id)
 		db.session.add(new_job)
 		db.session.flush()
 
