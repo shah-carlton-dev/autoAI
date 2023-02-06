@@ -9,12 +9,12 @@ class Job(db.Model):
 	success = db.Column(db.Integer, nullable=True)
 	timestamp = db.Column(db.String(80), nullable=True)
 
-	def __init__(self, api_id, user_id, file_id, status, timestamp):
+	def __init__(self, api_id, user_id, file_id, timestamp):
 		self.api_id = api_id
 		self.user_id = user_id
 		self.file_id = file_id
-		self.running = running
-		self.success = success
+		self.running = 1
+		self.success = None
 		self.timestamp = timestamp
 
 	def __repr__(self):
