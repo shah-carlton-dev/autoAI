@@ -22,6 +22,9 @@ def create_app(config_class=Config):
 	from app.files import bp as files_bp
 	app.register_blueprint(files_bp, url_prefix='/files')
 
+	from app.files import bp as jobs_bp
+	app.register_blueprint(jobs_bp, url_prefix='/jobs')
+
 	@app.route('/test/')
 	def test():
 		return True

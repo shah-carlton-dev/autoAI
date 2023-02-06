@@ -12,10 +12,6 @@ from app.extensions import db
 from app.config import Config
 from app.utils import allowed_file
 
-@bp.route('/a')
-def a():
-	return jsonify(os.path.realpath(os.path.dirname(__package__)))
-
 # POST new file
 # request = multipart form with file
 # returns = {message:"information about the request outcome", status:<http code>}
@@ -24,16 +20,16 @@ def a():
 def upload_file():
 	title = request.form.get('title')
 	description = request.form.get('description')
-	model = request.form.get('model')
 	uploaded_file = request.files['file']
 	if uploaded_file and allowed_file(uploaded_file.filename):
 		filename = secure_filename(uploaded_file.filename)
 		file_path = os.path.join(Config.UPLOAD_FOLDER, filename)
 		timestamp = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
+		timestamp2 = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 		file_name, file_extension = os.path.splitext(file_path)
 		file_path = file_name+'_'+timestamp+file_extension
 		uploaded_file.save(os.path.abspath(os.path.dirname(__name__))+'/../'+file_path)
-		new_file = File(title, description, model, file_path, filename.split(".")[0]+'_'+timestamp+file_extension, timestamp)
+		new_file = File(title, description, file_path, filename.split(".")[0]+'_'+timestamp+file_extension, timestamp2)
 		db.session.add(new_file)
 		db.session.commit()
 		return jsonify({"message": "File uploaded successfully.", "status": 200})
