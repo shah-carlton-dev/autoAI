@@ -7,6 +7,8 @@ import { Routes, Route } from "react-router-dom";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { useSelector } from 'react-redux'
 import React from 'react';
+import './styles/app.css';
+import routes from './constants/routes';
 
 function App() {
   const mode = useSelector((state) => state.global.themeMode);
@@ -25,9 +27,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="configureDataset" element={<ConfigureDataset />} />
-          <Route path="uploadDataset" element={<UploadDataset/>} />
-          <Route path="viewDataset" element={<ViewDataset/>} />
+          <Route path={routes.configureDataset} element={<ConfigureDataset />} />
+          <Route path={routes.uploadDataset} element={<UploadDataset/>} />
+          <Route path={routes.viewDataset} element={<ViewDataset/>} />
           {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
                 routes for. */}
