@@ -28,10 +28,12 @@ def dispatch():
 		# create job record
 		new_job = Job(api_doc.id, file_doc.id, issuer_id)
 		db.session.add(new_job)
-		db.session.commit()
+		db.session.flush()
 
-		# send dispatch (api url, file path, params)
-		dispatch_fn(api_doc.url, file_path, r.params)
+		# send dispatch (job_id, api url, file path, params)
+		dispatch_fn(new_job.id, api_doc.url, file_path, r.params)
+		
+		db.session.commit()
 
 	
 	return jsonify("hey")
