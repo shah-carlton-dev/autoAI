@@ -1,4 +1,5 @@
 from app.extensions import db
+from datetime import datetime
 
 class Job(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
@@ -9,13 +10,13 @@ class Job(db.Model):
 	success = db.Column(db.Integer, nullable=True)
 	timestamp = db.Column(db.String(80), nullable=True)
 
-	def __init__(self, api_id, user_id, file_id, timestamp):
+	def __init__(self, api_id, user_id, file_id):
 		self.api_id = api_id
 		self.user_id = user_id
 		self.file_id = file_id
 		self.running = 1
 		self.success = None
-		self.timestamp = timestamp
+		self.timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 	def __repr__(self):
 		return f"job: {self.id} - running: {self.running} - success: {self.success}"
