@@ -18,4 +18,4 @@ class Job(db.Model):
 		self.timestamp = timestamp
 
 	def __repr__(self):
-		return f"job: {self.id} - status: {self.status}"
+		return f"job: {self.id} - running: {self.running} - success: {self.success}"
