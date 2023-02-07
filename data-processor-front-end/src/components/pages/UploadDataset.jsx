@@ -20,9 +20,10 @@ const UploadDataset = () => {
           onupdatefiles={setFiles}
           allowMultiple={true}
           maxFiles={3}
-          server="/api/upload"
-          name="files"
+          server="/api/files/upload"
+          name="filepond"
           labelIdle='Drag & Drop your files or <span class="filepond--label-action">Browse</span>'
+          credits={false}
         />
         {/* <button onClick={(e) => {
           fetch('/api/files/getAll')

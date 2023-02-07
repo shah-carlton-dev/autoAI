@@ -20,7 +20,8 @@ from app.utils import allowed_file
 def upload_file():
 	title = request.form.get('title')
 	description = request.form.get('description')
-	uploaded_file = request.files['file']
+	uploaded_file = request.files.getlist('filepond')[0]
+	
 	if uploaded_file and allowed_file(uploaded_file.filename):
 		filename = secure_filename(uploaded_file.filename)
 		file_path = os.path.join(Config.UPLOAD_FOLDER, filename)
@@ -42,8 +43,6 @@ def upload_file():
 @bp.route('/getAll', methods=['GET'])
 @cross_origin(origin='*')
 def get_all():
-	print("EEEEEEEEE")
-	print('five')
 	page = request.args.get('page')
 	per_page = request.args.get('per_page')
 	file_page = File.query.paginate(page=page, per_page=per_page)
