@@ -1,6 +1,6 @@
-node_modules
 module_testing/.env
 data-processor-backend/.env
+data-processor-backend/Pipfile.lock
 *.pyc
 *.db
 **/uploads/**

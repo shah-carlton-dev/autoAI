@@ -14,6 +14,14 @@ export default defineConfig({
   server: {
     watch: {
       usePolling: true
+    },
+    proxy: {
+      '/': {
+        target: 'https://localhost:44305',
+        changeOrigin: true,
+        secure: false,      
+        ws: true,
+       }
     }
   }
 })
