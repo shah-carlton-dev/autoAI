@@ -10,7 +10,7 @@ registerPlugin(FilePondPluginGetFile, FilePondPluginFileEncode)
 
 const UploadDataset = () => {
   const [files, setFiles] = useState([])
-
+  
   return (
     <Grid container spacing={2}>
       <Grid xs={3}/>
@@ -20,10 +20,21 @@ const UploadDataset = () => {
           onupdatefiles={setFiles}
           allowMultiple={true}
           maxFiles={3}
-          server="/api"
-          name="files" /* sets the file input name, it's filepond by default */
+          server="/api/upload"
+          name="files"
           labelIdle='Drag & Drop your files or <span class="filepond--label-action">Browse</span>'
         />
+        {/* <button onClick={(e) => {
+          fetch('/api/files/getAll')
+          .then(response => {
+              // handle the response
+              console.log(response)
+          })
+          .catch(error => {
+              // handle the error
+              console.log(error)
+          });
+        }}></button> */}
       </Grid>
       <Grid xs={3}/>
     </Grid>

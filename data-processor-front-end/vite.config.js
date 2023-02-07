@@ -16,11 +16,11 @@ export default defineConfig({
       usePolling: true
     },
     proxy: {
-      '/': {
-        target: 'https://localhost:44305',
-        changeOrigin: true,
+      '/api': {
+        target: 'http://localhost:5000',
+        changeOrigin: false,
         secure: false,      
-        ws: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
        }
     }
   }
