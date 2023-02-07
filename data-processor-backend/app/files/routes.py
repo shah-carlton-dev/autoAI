@@ -22,6 +22,7 @@ def upload_file():
 	title = request.form.get('title')
 	description = request.form.get('description')
 	uploaded_file = request.files.getlist('filepond')[0]
+	print(request.form.get('filepond'))
 	
 	if uploaded_file and allowed_file(uploaded_file.filename):
 		file_name = secure_filename(uploaded_file.filename)
