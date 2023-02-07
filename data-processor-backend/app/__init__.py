@@ -11,6 +11,8 @@ def create_app(config_class=Config):
 
 	# initialize flask extensions
 	db.init_app(app)
+	# with app.app_context():
+	# 	db.create_all()
 
 	# register blueprints
 	from app.main import bp as main_bp
@@ -19,7 +21,7 @@ def create_app(config_class=Config):
 	from app.files import bp as files_bp
 	app.register_blueprint(files_bp, url_prefix='/files')
 
-	from app.files import bp as jobs_bp
+	from app.jobs import bp as jobs_bp
 	app.register_blueprint(jobs_bp, url_prefix='/jobs')
 
 	@app.route('/test/')
