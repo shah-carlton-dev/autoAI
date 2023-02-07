@@ -1,4 +1,5 @@
 const routes = {
+    root: '',
     configureDataset: 'configureDataset',
     uploadDataset: 'uploadDataset',
     viewDataset: 'viewDataset'

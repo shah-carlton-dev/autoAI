@@ -7,23 +7,26 @@ import { Routes, Route } from "react-router-dom";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { useSelector } from 'react-redux'
 import React from 'react';
-import './styles/app.css';
+// import './styles/app.css';
+import CssBaseline from '@mui/material/CssBaseline';
 import routes from './constants/routes';
 
 function App() {
   const mode = useSelector((state) => state.global.themeMode);
+  console.log(mode)
   const theme = React.useMemo(
     () =>
       createTheme({
         palette: {
-          mode,
+          mode: mode,
         },
       }),
     [mode],
   );
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}> 
+      <CssBaseline enableColorScheme/>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

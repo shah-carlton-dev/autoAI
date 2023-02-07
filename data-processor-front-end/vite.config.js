@@ -7,7 +7,8 @@ export default defineConfig({
     react({
       include: ['**/*.js',
                 '**/*.jsx',
-                '**/*.css'],
+                '**/*.css',
+                '**/*.html'],
     })
   ],
   server: {
