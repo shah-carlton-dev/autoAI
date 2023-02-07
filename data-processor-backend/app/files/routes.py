@@ -31,7 +31,7 @@ def upload_file():
 		file_path = os.path.join(Config.UPLOAD_FOLDER, file_name)
 		uploaded_file.save(os.path.abspath(os.path.dirname(__name__)) + file_path)
 
-		new_file = File(1, title, description, file_path, file_name, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+		new_file = File(title, description, file_path, file_name, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 		db.session.add(new_file)
 		db.session.commit()
 		return jsonify({"message": "File uploaded successfully.", "status": 200})
