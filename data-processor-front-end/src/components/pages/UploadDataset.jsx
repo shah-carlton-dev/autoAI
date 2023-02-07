@@ -19,9 +19,10 @@ const UploadDataset = () => {
           files={files}
           onupdatefiles={setFiles}
           allowMultiple={true}
-          maxFiles={3}
+          maxFiles={1}
           server="/api/files/upload"
           name="filepond"
+          intantUpload={false}
           labelIdle='Drag & Drop your files or <span class="filepond--label-action">Browse</span>'
           credits={false}
         />

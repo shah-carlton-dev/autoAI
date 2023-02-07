@@ -7,7 +7,6 @@ import { Routes, Route } from "react-router-dom";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { useSelector } from 'react-redux'
 import React from 'react';
-// import './styles/app.css';
 import CssBaseline from '@mui/material/CssBaseline';
 import routes from './constants/routes';
 
