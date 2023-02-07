@@ -10,5 +10,5 @@ class Config:
 	# pw: Y&+B1rUdF%4~%U8e
 	# conn string: lucid-diode-377015:us-central1:auto-ai-v1
 	
-	UPLOAD_FOLDER = 'data-processor-backend/uploads'
+	UPLOAD_FOLDER = '/app/uploads'
 	ALLOWED_EXTENSIONS = ['csv']

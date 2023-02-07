@@ -1,4 +1,5 @@
 import os
+import uuid
 from datetime import datetime
 from glob import glob
 
@@ -20,21 +21,22 @@ from app.utils import allowed_file
 def upload_file():
 	title = request.form.get('title')
 	description = request.form.get('description')
-	uploaded_file = request.files['file']
+	uploaded_file = request.files.getlist('filepond')[0]
+	
 	if uploaded_file and allowed_file(uploaded_file.filename):
-		filename = secure_filename(uploaded_file.filename)
-		file_path = os.path.join(Config.UPLOAD_FOLDER, filename)
-		timestamp = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
-		timestamp2 = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-		file_name, file_extension = os.path.splitext(file_path)
-		file_path = file_name+'_'+timestamp+file_extension
-		uploaded_file.save(os.path.abspath(os.path.dirname(__name__))+'/../'+file_path)
-		new_file = File(title, description, file_path, filename.split(".")[0]+'_'+timestamp+file_extension, timestamp2)
+		file_name = secure_filename(uploaded_file.filename)
+		file_name, file_extension = os.path.splitext(file_name)
+		file_name += f'_{datetime.now().strftime("%Y-%m-%d_%H:%M:%S")}'
+		file_name += file_extension
+		file_path = os.path.join(Config.UPLOAD_FOLDER, file_name)
+		uploaded_file.save(os.path.abspath(os.path.dirname(__name__)) + file_path)
+
+		new_file = File(1, title, description, file_path, file_name, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 		db.session.add(new_file)
 		db.session.commit()
 		return jsonify({"message": "File uploaded successfully.", "status": 200})
 	else:
-		return jsonify({"message": f"Only CSV files are allowed. Found file: {uploaded_file.filename}", "status": 400})
+		return {"message": f"Only CSV files are allowed. Found file: {uploaded_file.filename}", "status": 400}, 400
 
 # GET all files on page
 # request = {page, per_page}
@@ -125,4 +127,4 @@ def download_file():
 	if (file_doc is not None) and (os.path.exists('../'+file_doc.file_path)):
 		return send_file("../uploads/"+file_doc.file_name, download_name=file_doc.title,as_attachment=True)
 	else:
-		return jsonify({"status": 404, "message":"file not found", "file":file_id})
+		return {"status": 404, "message":"file not found", "file":file_id}, 404
