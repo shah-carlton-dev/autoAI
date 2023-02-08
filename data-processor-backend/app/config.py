@@ -1,9 +1,8 @@
 import os
 
-basedir = os.path.abspath(os.path.dirname(__file__))
-
 class Config:
-	SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, '../app.db')
+	BASEDIR = os.path.abspath(os.path.dirname(__file__))[:-3]
+	SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(BASEDIR, 'app.db')
 	SQLALCHEMY_TRACK_MODIFICATIONS = False
 	
 	# instance: auto-ai-v1

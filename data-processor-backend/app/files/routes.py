@@ -30,7 +30,7 @@ def upload_file():
 		file_name += f'_{datetime.now().strftime("%Y-%m-%d_%H:%M:%S")}'
 		file_name += file_extension
 		file_path = os.path.join(Config.UPLOAD_FOLDER, file_name)
-		uploaded_file.save(os.path.abspath(os.path.dirname(__name__)) + file_path)
+		uploaded_file.save(Config.BASEDIR + file_path)
 
 		new_file = File(title, description, file_path, file_name, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 		db.session.add(new_file)
