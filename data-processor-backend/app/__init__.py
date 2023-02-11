@@ -9,11 +9,11 @@ from app.models.org import Org
 from app.models.user import User
 
 # structure from https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy
-def create_app(config=Config):
+def create_app(config_class=Config):
 	app = Flask(__name__)
-	app.config.from_object(config)
-	print(config.SQLALCHEMY_DATABASE_URI)
-	app.config['SQLALCHEMY_DATABASE_URI'] = config.SQLALCHEMY_DATABASE_URI
+	app.config.from_object(config_class)
+	print(config_class.SQLALCHEMY_DATABASE_URI)
+	app.config['SQLALCHEMY_DATABASE_URI'] = config_class.SQLALCHEMY_DATABASE_URI
 	# initialize flask extensions
 	db.init_app(app)
 	if len(db.metadata.tables.keys()) == 0:
