@@ -7,6 +7,7 @@ from flask_cors import cross_origin
 
 from app.models.job import Job
 from app.models.file import File
+from app.models.api import API
 from app.extensions import db
 
 # POST new job
