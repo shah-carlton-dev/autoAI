@@ -1,4 +1,5 @@
-from flask import Flask
+from flask import Flask, jsonify
+from flask_sqlalchemy import SQLAlchemy
 
 from app.config import Config
 from app.extensions import db
@@ -9,11 +10,10 @@ from app.models.org import Org
 from app.models.user import User
 
 # structure from https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy
-def create_app(config_class=Config):
+def create_app(config=Config):
 	app = Flask(__name__)
-	app.config.from_object(config_class)
-	print(config_class.SQLALCHEMY_DATABASE_URI)
-	app.config['SQLALCHEMY_DATABASE_URI'] = config_class.SQLALCHEMY_DATABASE_URI
+	app.config.from_object(config)
+
 	# initialize flask extensions
 	db.init_app(app)
 	if len(db.metadata.tables.keys()) == 0:
@@ -32,7 +32,7 @@ def create_app(config_class=Config):
 
 	@app.route('/test/')
 	def test():
-		return True
+		return jsonify(True)
 
 	return app
 	

@@ -45,9 +45,13 @@ def upload_file():
 @bp.route('/getAll', methods=['GET'])
 @cross_origin(origin='*')
 def get_all():
-	page = request.args.get('page')
-	per_page = request.args.get('per_page')
-	file_page = File.query.paginate(page=page, per_page=per_page)
+	print('running')
+	page = request.json.get('page')
+	per_page = request.json.get('per_page')
+	print(page, per_page)
+	# file_page = File.query.paginate(page=page, per_page=per_page)
+	file_page = File.query.paginate()
+	print("yo")
 	files_list = []
 	for file in file_page:
 		files_list.append({

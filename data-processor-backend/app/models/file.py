@@ -7,7 +7,8 @@ class File(db.Model):
 	file_path = db.Column(db.String(120))
 	file_name = db.Column(db.String(120))
 	timestamp = db.Column(db.String(120))
-	owner_id = db.relationship('User', backref='API', lazy=True, uselist=False)
+	owner_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+	# owner = db.relationship('User', backref='User', lazy=True, uselist=False)
 
 	def __init__(self, title, description, model, file_path, file_name, timestamp):
 		self.title = title

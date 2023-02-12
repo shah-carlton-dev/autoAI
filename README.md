@@ -8,3 +8,6 @@ from app.models.file import File
 from app.models.job import Job
 db.drop_all()
 db.create_all()
+
+see link on how to install dependencies for mysql -
+https://stackoverflow.com/questions/25865270/how-to-install-python-mysqldb-module-using-pip
